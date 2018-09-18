@@ -1,0 +1,29 @@
+Assets
+------------------------
+Here you will find the prefab and scripts.
+Please keep the folder structure and names in order to work.
+
+Prefabs folder:
+- TimeMachine.prefab
+
+Scripts folder:
+- MonoBehaviourExtended.cs --- works together with Singleton.cs to assure that there is only one instance of TimeMachine
+- Singleton.cs --- works together with MonoBehaviourExtended.cs to assure that there is only one instance of TimeMachine
+- TimeMachine.cs --- handles all game objects with the Time Traveller component. This component is attached to the Time Machine prefab
+- TimeTraveller.cs --- component that saves information during the time (position, rotation and scale. If the game object has a Rigidbody, also velocity and angularVelocity)
+
+Editor folder:
+- TimeMachineInspector.cs --- customize the Inspector view for the Time Machine component
+
+Demo
+----------------------
+A demo that shows Aion in action.
+It is optional and you can delete it if you dont need it.
+
+There are two scenes inside this folder:
+
+- BasicScene.unity is the simplest one and is made by a plane and a cube.
+  The time control is managed by adding a component.
+
+- SampleScene.unity is more complex as it features many cubes and a user interface.
+  The time control is managed by tags.

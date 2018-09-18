@@ -1,0 +1,26 @@
+Tutorial
+
+To control the time, you can procced by setting a tag on each game object or adding a
+component to each game object. You also have to set some input axes to manage the
+time.
+
+Input Settings
+--------------
+Open the Input Settings menu (Edit >> Project Settings >> Input) and set the following axes:
+a. “ForwardPause” to forward the time inside the pause.
+b. “RewindPause” to rewind the time inside the pause.
+c. “RewindTime” to rewind the time outside the pause.
+d. “PauseTime” to pause the time.
+
+Control the time by tag
+-----------------------
+1. Drag and drop the prefab called TimeMachine into the Hierarchy.
+2. Select it into the Hierarchy.
+3. On the Inspector you will find the list “Tags to Rewind”. Add to this list the name of every tag you want control. Please, beware that it is case-sensitive.
+
+Control the time by adding a component
+--------------------------------------
+1. Drag and drop the prefab called TimeMachine into the Hierarchy.
+2. Select the game object which you want to control the time.
+3. On the Inspector press the button Add Component.
+4. Type “Time Traveller” and press enter.
